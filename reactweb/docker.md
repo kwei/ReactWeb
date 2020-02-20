@@ -105,4 +105,16 @@ docker-machine start default
 #### [Dangling images](https://www.projectatomic.io/blog/2015/07/what-are-docker-none-none-images/)
 #### [Docker cmd](https://docs.docker.com/engine/reference/commandline/docker/)
 
+### PUSH
+```bash
+# 將 image 加上 tag 
+docker tag <image name> <docker hub account>/<image name>
+
+# 登入 docker hub
+docker login
+
+# 將存好的 image tag push 上去
+docker push <docker hub account>/<image name>
+```
+
 
